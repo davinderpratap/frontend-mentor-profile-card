@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+    
+    body{
+      position: fixed;
+      height:50vw;
+      width:100vw ;
+      background-color:hsl(185, 75%, 39%);
+      text-align: center;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+    .img-top-bg{
+      position: absolute;
+  bottom: 35%;
+  right: 53%;
+    }
+    .img-bottom-bg{
+      position: absolute;
+  left: 50%;
+  top: 48%;
+  z-index: -1;
+    }
+    .card{
+      display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 150px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  position: fixed;
+  top: 23%;
+  left: 40%;
+  bottom:25%;
+  box-shadow: 0 1px 10px 1px hsl(227, 10%, 56%);
+    }
+    .num-div{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .img-card-bg{
+      position: relative;
+    width: 100%;
+    top:0.3px;
+    border-radius: 15px 15px 0 0 ;
+    margin: 0;
+    }
+    .card-info{
+      position: relative;
+      top:-50px;
+    }
+    .profile-img{
+      border:solid 5px #fff;
+      border-radius: 50%;
+    }
+    .num-div p{
+      font-size: 0.7em;
+    }
+    
+    .num1 {
+     display: flex;
+     flex-direction: column;
+     margin: 0 30px;
+     
+    }
+    .num1 p{
+      margin-top:-28px; ;
+    }
+    .num1 .l{
+      margin-top: -11px;
+    }
+    .num1 .p{
+      margin-top: -11px;
+    }
+    h3{
+      font-size: 18px;
+      font-weight: 700;
+    }
+    p, .age{
+      font-weight: 400;
+      color: hsl(227, 10%, 46%);
+    }
+    
+  </style>
+</head>
+<body>
+  <img class="img-top-bg" src="images/bg-pattern-top.svg" alt="bg-img">
+  <img class="img-bottom-bg" src="images/bg-pattern-bottom.svg" alt="bg-img">
+   
+  
+  <div class="card">
+    <div class="card-top">
+      <img class="img-card-bg" src="images/bg-pattern-card.svg" alt="">
+    </div>
+    <div class="card-info"><img class="profile-img" src="images/image-victor.jpg">
+    <h3>Victor Crest
+    <span class="age">26</span></h3>
+    <p>London</p>
+    <hr>
+<div class="num-div">
+    <div class="num1"><h3>80K</h3><br>
+    <p class="f">Followers</p></div>
+    <div class="num1"><h3>803K</h3>
+    <p class="l"> Likes</p></div>
+    <div class="num1"><h3>1.4K</h3>
+    <p class="p">Photos</p></div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
